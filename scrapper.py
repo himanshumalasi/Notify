@@ -4,7 +4,6 @@ import smtplib
 import time
 
 def get_info(url,email,expected_price):
-	#url = 'https://www.amazon.in/Wireless-Bluetooth-Reinforced-Microphone-Playback/dp/B07F984ZH2/ref=lp_1388921031_1_1_sspa?s=electronics&ie=UTF8&qid=1570443580&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFXOTBFSFEyQTRFNyZlbmNyeXB0ZWRJZD1BMDY1MTk1NTMxR085UjZQTVI1TFQmZW5jcnlwdGVkQWRJZD1BMDIwNDE3OTJTUzhES1BFNUI0WkEmd2lkZ2V0TmFtZT1zcF9hdGZfYnJvd3NlJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=='
 	header = {"User-Agent":'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'}
 	
 	r = requests.get(url,headers=header)
@@ -34,7 +33,7 @@ def send_mail(url,email):
 
 	msg = f'Subject:{subject}\n\n{body}'
 	server.sendmail(
-		'himanshumalasi1998@gmail.com',
+		'<Enter Server Email>',
 		email,
 		msg
 		)
